@@ -38,7 +38,16 @@ used everywhere
 * Now work with team that moves the entire 20-million city from
 Windows to Linux
 ---
+![bg right:40%](images/agenda.jpg)
 # Agenda
+
+* Why we need MFP simulator?
+* What is behaviorally accurate simulation?
+* Scope of this project
+* MFP is a complex thing. How to make models simple?
+* Helper tools
+* Side projects
+* Current state
 
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
