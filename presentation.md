@@ -48,6 +48,14 @@ Windows to Linux
 * Helper tools
 * Side projects
 * Current state
+---
+![bg left:40%](images/many_printers.jpg)
+# Why We Need an MFP Simulator
+
+* Printers are large, heavy, and expensive.
+* Maintaining a representative collection is difficult, even for corporations.
+* Printing and scanning software is complex.
+* Development, troubleshooting, and support require reproducibility.
 
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
