@@ -56,6 +56,40 @@ Windows to Linux
 * Maintaining a representative collection is difficult, even for corporations.
 * Printing and scanning software is complex.
 * Development, troubleshooting, and support require reproducibility.
+* Accurate simulation would be a solution.
+
+---
+![bg right:40%](images/scope.jpg)
+# Scope of This Project
+
+* Standard printing protocol (IPP).
+* Standard scanning protocols (eSCL and WSD).
+* IPP over USB simulation.
+* DNS-SD and WS-Discovery advertising.
+* Probably, semi-accurate implementation of legacy printing protocols,
+  for completeness.
+* Proprietary protocols not implemented and not planned.
+
+---
+![bg left:40%](images/accuracy.jpg)
+# What is Behaviorally Accurate?
+
+* For the standard protocols, behavior is defined by the specification
+  and printer attributes/scanner capabilities.
+* But this is not enough. Real hardware often deviate from these
+  specifications.
+* Model must define not only device parameters but the details of the
+  actual device behavior.
+
+---
+![bg right:40%](images/how_accurate.jpg)
+# How accurate can be our models?
+
+* The actual limiting factor is our detailed knowledge of the particular
+  model.
+* But 100% accuracy is not required. It is enough to reproduce essential
+  details.
+* In many cases it is enough just to reproduce the problem.
 
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
