@@ -91,6 +91,17 @@ Windows to Linux
   details.
 * In many cases it is enough just to reproduce the problem.
 
+---
+# Creation of models
+![bg left:40%](images/phonograph.jpg)
+
+* A model is a "recording" of a device's core capabilities — a simple
+  collection of its printer attributes and scanner capabilities,
+  made without behavioral details.
+* The mfp-model tool records these baseline models automatically from
+  real hardware.
+* The mfp-virtual tool playbacks a model to emulate the original hardware.
+
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
 
