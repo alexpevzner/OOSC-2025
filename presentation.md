@@ -102,6 +102,17 @@ Windows to Linux
   real hardware.
 * The mfp-virtual tool playbacks a model to emulate the original hardware.
 
+---
+# Live example
+![bg right:60%](images/Kyocera_ECOSYS_M2040dn.jpg)
+
+This is the fragment of the `Kyocera ECOSYS M2040dn` eSCL scanner,
+automatically generated with the `mfp-model` tool.
+
+---
+<!-- _header: 'Behaviour-accurate MFP simulator -- Live Example' -->
+![bg 85%](images/live.jpg)
+
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
 
