@@ -113,6 +113,27 @@ automatically generated with the `mfp-model` tool.
 <!-- _header: 'Behaviour-accurate MFP simulator -- Live Example' -->
 ![bg 85%](images/live.jpg)
 
+---
+# Adding behavior details
+![bg left:40%](images/gears.jpg)
+
+* Using auto-recorded model, we can reproduce the idealized MFP
+  behavior: defined by model's parameters and implemented accurding
+  to specifications.
+* Now lets add a hardware-specific behavior details.
+
+---
+# The model language
+![bg right:40%](images/python.jpg)
+
+* The model itself is a Python script.
+* Printer attributes and scanner capabilities are defined as Python
+  dictionaries.
+* A set of Python hooks is provided to modify the model's behavior.
+* All hooks are optional; write only the required ones.
+* The simulator itself is written in Go but contains an embedded Python
+  interpreter.
+
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
 
