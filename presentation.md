@@ -120,7 +120,7 @@ automatically generated with the `mfp-model` tool.
 * Using auto-recorded model, we can reproduce the idealized MFP
   behavior: defined by model's parameters and implemented accurding
   to specifications.
-* Now lets add a hardware-specific behavior details.
+* Now lets add some hardware-specific behavior details.
 
 ---
 # The model language
@@ -133,6 +133,25 @@ automatically generated with the `mfp-model` tool.
 * All hooks are optional; write only the required ones.
 * The simulator itself is written in Go but contains an embedded Python
   interpreter.
+
+---
+# The practical case
+![bg left:40%](images/experiment.jpg)
+
+* One of the scanners I had to implement the workaround for
+  offers the JPEG/PNG image support.
+* `sane-airscan` always prefers PNG if available, because it is lossless.
+* However, this device actually sends a JPEG, even when PNG is requested.
+* This caused decode errors, forcing me to add automatic format detection to 
+  `sane-airscan`.
+
+---
+![bg right:50% fit](images/document-format-hook.jpg)
+
+* The `escl_onScanJobsRequest` hook in the model file can modify the eSCL scan request
+  (represented as Python dictionary).
+* We can see from the `sane-airscan` log that the received image format changed from PNG to JPEG.
+* As simple as that; only few lines on Python required.
 
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
