@@ -16,11 +16,12 @@ paginate: true
 
 <br>
 <br>
-<br>
 
 <style scoped>p{font-size:20px;}</style>
-Image source and licensing information:
+Title image source and licensing information:
 https://commons.wikimedia.org/wiki/File:BESM-6_ACPY.jpg
+
+Other images are generated with [Craiyon](https://www.craiyon.com/en) and Kandinsky AIs.
 
 ---
 <!-- _header: '' -->
@@ -30,7 +31,7 @@ https://commons.wikimedia.org/wiki/File:BESM-6_ACPY.jpg
 ![bg left:40%](images/portrait.jpg)
 
 * OpenPrinting member since 2020
-* Write systems software in C and Go
+* Write system software in C and Go
 * Author of the [ipp-usb](https://github.com/OpenPrinting/ipp-usb) and
 [sane-airscan](https://github.com/alexpevzner/sane-airscan) packages,
 used everywhere
@@ -46,8 +47,8 @@ Windows to Linux
 * Scope of this project
 * MFP is a complex thing. How to make models simple?
 * Helper tools
-* Side projects
 * Current state
+* Side projects
 ---
 ![bg left:40%](images/many_printers.jpg)
 # Why We Need an MFP Simulator
@@ -66,8 +67,7 @@ Windows to Linux
 * Standard scanning protocols (eSCL and WSD).
 * IPP over USB simulation.
 * DNS-SD and WS-Discovery advertising.
-* Probably, semi-accurate implementation of legacy printing protocols,
-  for completeness.
+* Probably, semi-accurate implementation of legacy printing protocols, for completeness.
 * Proprietary protocols not implemented and not planned.
 
 ---
@@ -76,38 +76,36 @@ Windows to Linux
 
 * For the standard protocols, behavior is defined by the specification
   and printer attributes/scanner capabilities.
-* But this is not enough. Real hardware often deviate from these
-  specifications.
+* But this is not enough. Real hardware often deviate from these specifications.
 * Model must define not only device parameters but the details of the
-  actual device behavior.
+  actual device behavior, including bugs.
 
 ---
 ![bg right:40%](images/how_accurate.jpg)
 # How accurate can be our models?
 
-* The actual limiting factor is our detailed knowledge of the particular
-  model.
-* But 100% accuracy is not required. It is enough to reproduce essential
-  details.
+* The actual limiting factor is our detailed knowledge of the particular model.
+* But 100% accuracy is not required. It is enough to reproduce essential details.
 * In many cases it is enough just to reproduce the problem.
 
 ---
 # Creation of models
 ![bg left:40%](images/phonograph.jpg)
 
-* A model is a "recording" of a device's core capabilities — a simple
+* A base model is a "recording" of a device's core capabilities — a simple
   collection of its printer attributes and scanner capabilities,
   made without behavioral details.
-* The mfp-model tool records these baseline models automatically from
+* The `mfp-model` tool records these baseline models automatically from
   real hardware.
-* The mfp-virtual tool playbacks a model to emulate the original hardware.
+* The `mfp-virtual` tool playbacks a model to emulate the original hardware.
 
 ---
 # Live example
 ![bg right:60%](images/Kyocera_ECOSYS_M2040dn.jpg)
 
-This is the fragment of the `Kyocera ECOSYS M2040dn` eSCL scanner,
-automatically generated with the `mfp-model` tool.
+This is the fragment of the `Kyocera ECOSYS M2040dn` eSCL scanner
+model, automatically generated with
+the `mfp-model` tool.
 
 ---
 <!-- _header: 'Behaviour-accurate MFP simulator -- Live Example' -->
@@ -118,7 +116,7 @@ automatically generated with the `mfp-model` tool.
 ![bg left:40%](images/gears.jpg)
 
 * Using auto-recorded model, we can reproduce the idealized MFP
-  behavior: defined by model's parameters and implemented accurding
+  behavior: defined by model's parameters and implemented according
   to specifications.
 * Now lets add some hardware-specific behavior details.
 
@@ -138,8 +136,8 @@ automatically generated with the `mfp-model` tool.
 # The practical case
 ![bg left:40%](images/experiment.jpg)
 
-* One of the scanners I had to implement the workaround for
-  offers the JPEG/PNG image support.
+* One of the scanners I had to implement the workaround for offers
+  the JPEG/PNG image support.
 * `sane-airscan` always prefers PNG if available, because it is lossless.
 * However, this device actually sends a JPEG, even when PNG is requested.
 * This caused decode errors, forcing me to add automatic format detection to 
