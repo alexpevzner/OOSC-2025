@@ -172,10 +172,8 @@ automatically generated with the `mfp-model` tool.
 * Next slide shows it live.
 
 ---
-<!-- _header: '' -->
-<!-- _footer: '' -->
-![bg fit](images/600x600.jpg)
-![bg fit](images/150x150.jpg)
+<!-- _header: 'Behaviour-accurate MFP simulator -- Image filtering' -->
+![bg 85%](images/image_filtering_result.jpg)
 
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
