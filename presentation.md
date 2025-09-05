@@ -175,6 +175,35 @@ automatically generated with the `mfp-model` tool.
 <!-- _header: 'Behaviour-accurate MFP simulator -- Image filtering' -->
 ![bg 85%](images/image_filtering_result.jpg)
 
+---
+# Here's what we have
+![bg left:40%](images/intermezzo.jpg)
+
+* A simulator core that provides an "ideal," fully standards-compliant base simulation of a printer or scanner.
+* Model parameters that define the device in protocol-specific terms.
+* Simple Python hooks that can modify any aspect of the device's behavior.
+* Useful helper tool for models creation.
+* This architecture makes our simulator both simple to use and powerful.
+
+---
+# Under the Hood
+![bg right:40%](images/under_the_hood.jpg)
+
+* The core simulator is a set of Go libraries that provide a generic and
+  comprehensive implementation of several protocols (such as IPP, eSCL,
+  WSD etc).
+* Applications add a command-line interface (CLI) to access this functionality.
+* This codebase can serve as a foundation for other projects, not necessarily limited to emulation
+
+---
+# The Proxy Mode
+![bg left:40%](images/proxy.jpg)
+
+* Another useful component of this project is the `mfp-proxy`.
+* It implements an IPP/eSCL/WSD proxy.
+* Transit traffic can be captured (sniffed).
+* Device models can be applied to the real, proxied devices, effectively modifying their characteristics or behavior.
+
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
 
