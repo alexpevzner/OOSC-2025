@@ -153,6 +153,30 @@ automatically generated with the `mfp-model` tool.
 * We can see from the `sane-airscan` log that the received image format changed from PNG to JPEG.
 * As simple as that; only few lines on Python required.
 
+---
+# Image filtering
+![bg left:40% fit](images/image_filtering.jpg)
+
+* We also have image filtering pipeline, integrated into the simulator.
+* Scanned image can be resampled to change resolution, cropped, color mode can be changed etc.
+* This is useful to emulate firmware bugs and to test our drivers.
+
+---
+# Image filtering: try it
+![bg right:50% fit](images/image_filtering_hook.jpg)
+
+* `escl_onNextDocumentResponse` called when image is ready.
+* It can set image post-processing parameters.
+* We request image resampling from the original 600x600 to 150x150 DPI.
+* As simple as that.
+* Next slide shows it live.
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+![bg fit](images/600x600.jpg)
+![bg fit](images/150x150.jpg)
+
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
 
