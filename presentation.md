@@ -204,6 +204,81 @@ automatically generated with the `mfp-model` tool.
 * Transit traffic can be captured (sniffed).
 * Device models can be applied to the real, proxied devices, effectively modifying their characteristics or behavior.
 
+---
+# Current State
+![bg right:40%](images/wip.jpg)
+
+* This project is work in progress.
+* Most Complete: eSCL scanner simulator.
+* In Development: WSD scanner simulator (by Yogesh Singla, [yogesh1801](https://github.com/yogesh1801) at GitHub)
+* Partially Done: IPP support.
+* Proof-of-Concept: IPP-over-USB simulation (needs integration).
+* Not Started: DNS-SD & WSD advertising.
+
+---
+# Side Projects
+![bg left:40%](images/side_projects.jpg)
+
+* This is a large project, with about 47K lines of Go code and 26K lines of tests.
+* During development, several interesting sub-projects were created which may eventually have a life of their own.
+* Here, I will briefly outline the most interesting of them.
+
+---
+# Go Avahi Bindings (cgo)
+![bg right:40% fit](images/go-avahi.jpg)
+
+Complete, idiomatic Go bindings for the Avahi client library.
+* As close to C API as possible.
+* Idiomatic Go: Event handling via channels, not callbacks.
+* Comprehensive documentation with many nuances. Useful even for C programmers.
+* Moved into the separate project.
+
+---
+# Go Binding for CPython
+![bg left:40% fit](images/python_go.jpg)
+
+Distinguishing features:
+* Links against the generic libpython3.so, not a version-specific libpython3.NN.so.
+* Uses only CPython stable API.
+* Tolerant to minor Python version upgrades without requiring a rebuild.
+* Automatic garbage collection of Python objects on the Go side.
+* Currently part of main project (at the /cpython directory).
+
+---
+# That's All for Now
+![bg right:40% fit](images/that_is_all.jpg)
+
+<br>
+<br>
+<br>
+
+Thank you for your time and attention!
+
+I'm happy to answer any questions.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+---
+# Contacts
+![bg left:40% fit](images/a_pevzner.jpg)
+
+<br>
+<br>
+<br>
+<br>
+
+Author can be easily reached using the Telegram messenger.
+
+<br>
+<br>
+<br>
+<br>
+
 <!-- vim:ts=8:sw=4:et:textwidth=72
 -->
 
