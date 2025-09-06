@@ -243,8 +243,17 @@ Distinguishing features:
 * Not Started: DNS-SD & WSD advertising.
 
 ---
+# Future Plans
+![bg right:40%](images/plans.jpg)
+
+* Project already used for the `sane-airscan` development and printing troubleshooting.
+* I hope to finish major parts till the end of this year.
+* Testing framework for running automated tests on simulated hardware.
+* Integration with the image evaluation framework made by  Sanskar Yaduka.
+
+---
 # That's All for Now
-![bg right:40% fit](images/that_is_all.jpg)
+![bg left:40% fit](images/that_is_all.jpg)
 
 <br>
 <br>
