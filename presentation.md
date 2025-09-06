@@ -203,19 +203,8 @@ the `mfp-model` tool.
 * Device models can be applied to the real, proxied devices, effectively modifying their characteristics or behavior.
 
 ---
-# Current State
-![bg right:40%](images/wip.jpg)
-
-* This project is work in progress.
-* Most Complete: eSCL scanner simulator.
-* In Development: WSD scanner simulator (by Yogesh Singla, [yogesh1801](https://github.com/yogesh1801) at GitHub)
-* Partially Done: IPP support.
-* Proof-of-Concept: IPP-over-USB simulation (needs integration).
-* Not Started: DNS-SD & WSD advertising.
-
----
 # Side Projects
-![bg left:40%](images/side_projects.jpg)
+![bg right:40%](images/side_projects.jpg)
 
 * This is a large project, with about 47K lines of Go code and 26K lines of tests.
 * During development, several interesting sub-projects were created which may eventually have a life of their own.
@@ -223,7 +212,7 @@ the `mfp-model` tool.
 
 ---
 # Go Avahi Bindings (cgo)
-![bg right:40% fit](images/go-avahi.jpg)
+![bg left:40% fit](images/go-avahi.jpg)
 
 Complete, idiomatic Go bindings for the Avahi client library.
 * As close to C API as possible.
@@ -233,7 +222,7 @@ Complete, idiomatic Go bindings for the Avahi client library.
 
 ---
 # Go Binding for CPython
-![bg left:40% fit](images/python_go.jpg)
+![bg right:40% fit](images/python_go.jpg)
 
 Distinguishing features:
 * Links against the generic libpython3.so, not a version-specific libpython3.NN.so.
@@ -241,6 +230,17 @@ Distinguishing features:
 * Tolerant to minor Python version upgrades without requiring a rebuild.
 * Automatic garbage collection of Python objects on the Go side.
 * Currently part of main project (at the /cpython directory).
+
+---
+# Current State
+![bg left:40%](images/wip.jpg)
+
+* This project is work in progress.
+* Most Complete: eSCL scanner simulator.
+* In Development: WSD scanner simulator (by Yogesh Singla, [yogesh1801](https://github.com/yogesh1801) at GitHub)
+* Partially Done: IPP support.
+* Proof-of-Concept: IPP-over-USB simulation (needs integration).
+* Not Started: DNS-SD & WSD advertising.
 
 ---
 # That's All for Now
