@@ -262,18 +262,16 @@ I'm happy to answer any questions.
 <br>
 
 ---
-# Contacts
-![bg left:40% fit](images/a_pevzner.jpg)
+# Contact Us
 
 <br>
 <br>
-<br>
-<br>
 
-Author can be easily reached using the Telegram messenger.
+* The project page: https://github.com/OpenPrinting/go-mfp
+* Author's e-mail: pzz@apevzner.com
+* Author's Telegram: https://t.me/a_pevzner
+* OpenPrinting Telegram channel: https://t.me/+RizBbjXz4uU2ZWM1
 
-<br>
-<br>
 <br>
 <br>
 
